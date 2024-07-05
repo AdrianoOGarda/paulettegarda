@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import useWindowSize from '../../hooks/useWindowSize'
 
 type YouTubeEmbedProps = {
@@ -7,8 +7,13 @@ type YouTubeEmbedProps = {
 
 const YouTubeEmbed: React.FC<YouTubeEmbedProps> = ({ videoId }) => {
     const windowSize = useWindowSize()
-    const isMobile = windowSize.width < 768
-    const width =  isMobile ? 340 : 650
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        setIsMobile(windowSize.width < 768)
+    }, [windowSize])
+
+    const width = isMobile ? 340 : 650
     const height = isMobile ? 250 : 390
 
     return (
