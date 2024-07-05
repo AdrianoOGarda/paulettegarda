@@ -1,0 +1,15 @@
+.comercial-card h4 {
+    font-family: 'Reddit Sans';
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.comercial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dark-h4 {
+    color: white;
+}

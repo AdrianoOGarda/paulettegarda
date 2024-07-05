@@ -1,0 +1,56 @@
+.nav-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Reddit Sans';
+    font-size: 35px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.nav-card-bio {
+    background-image: url('../../../src/images/Fotos/Festival.png');
+} 
+
+.nav-card-comerciales {
+    background-image: url('../../../src/images/Fotos/Comerciales.png');
+} 
+
+.nav-card-diseño {
+    background-image: url('../../../src/images/Bocetos/Diseño.png');
+} 
+
+.nav-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-card p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-card {
+        height: 160px;
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    .nav-card {
+        width: 500px;
+        height: 350px;
+    }
+}

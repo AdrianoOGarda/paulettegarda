@@ -1,0 +1,11 @@
+.films-container {
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.films-container h3 {
+    color: white;
+}

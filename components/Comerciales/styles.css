@@ -1,0 +1,52 @@
+.comerciales-div {
+    position: relative;
+}
+
+.comerciales-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/Bocetos/Orange.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+.comerciales-div .comerciales-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.second-comerciales-block::before {
+    background-image: url('../../src/images/Bocetos/Comerciales.png');
+    left: -800;
+}
+
+.third-comerciales-block::before {
+    background-image: url('../../src/images/Bocetos/Heroes.png');
+}
+
+.fourth-comerciales-block::before {
+    background-image: url('../../src/images/Bocetos/Diseño6.png');
+    left: -300px;
+}
+
+.fifth-comerciales-block::before {
+    background-image: url('../../src/images/Bocetos/Diseño1.png');
+}
+
+.sixth-comerciales-block::before {
+    background-image: url('../../src/images/Bocetos/DibujoDos.png');
+}
+
+.seventh-comerciales-block::before  {
+    background-image: url('/Victoria/Catrina.png');
+}
