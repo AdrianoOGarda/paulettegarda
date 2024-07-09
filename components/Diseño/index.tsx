@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Carousel from '../Carousel/index'
 import useWindowSize from '../../hooks/useWindowSize'
 import './styles.css'
@@ -8,7 +8,11 @@ interface DiseñoProps {
 
 const Diseño: React.FC<DiseñoProps> = () => {
     const windowSize = useWindowSize()
-    const isDesktop = windowSize.width > 768
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        setIsMobile(windowSize.width < 768)
+    }, [windowSize])
 
     const CarouselContent = [
         { src: '/Bocetos/Aviv.png', alt: 'Bocetos' },
@@ -88,9 +92,9 @@ const Diseño: React.FC<DiseñoProps> = () => {
     return (
         <div className="content diseño-container" id="diseño">
             <h3>Bocetos</h3>
-            <Carousel content={CarouselContent} height={isDesktop ? 800 : 400} large />
+            <Carousel content={CarouselContent} height={isMobile ? 400 : 800} large />
             <h3>Fotos</h3>
-            <Carousel content={FotosContent} height={isDesktop ? 800 : 400} large />
+            <Carousel content={FotosContent} height={isMobile ? 400 : 800} large />
         </div>
     )
 }
