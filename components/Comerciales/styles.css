@@ -32,6 +32,7 @@
 
 .third-comerciales-block::before {
     background-image: url('../../src/images/Bocetos/Heroes.png');
+    top: -200px;
 }
 
 .fourth-comerciales-block::before {
@@ -49,4 +50,19 @@
 
 .seventh-comerciales-block::before  {
     background-image: url('/Victoria/Catrina.png');
+}
+
+.see-more {
+    font-family: 'Reddit Sans';
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.comerciales-container-more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0 50px 0;
 }

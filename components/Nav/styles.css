@@ -5,11 +5,10 @@
     background-size: cover;
     width: 100%;
     z-index: 0;
-    height: 100vh;
 }
 
 .title-div h1 {
-    font-family: 'Playwrite NZ';
+    font-family: 'Reddit Sans';
     font-size: 35px;
 }
 
@@ -26,9 +25,9 @@
 @media screen and (min-width: 1130px) {
     .nav-card-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-        gap: 20px; /* Adjust the gap between grid items as needed */
-        justify-items: center; /* Center the grid items horizontally */
-        margin: 0 auto; /* Center the container within the page */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+        margin: 0 auto;
     }
 }

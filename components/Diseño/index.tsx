@@ -36,18 +36,61 @@ const Diseño: React.FC<DiseñoProps> = () => {
         { src: '/Bocetos/Viernes26.png', alt: 'Bocetos' },
         { src: '/Bocetos/Yellow.png', alt: 'Bocetos' },
         { src: '/Bocetos/YellowDos.png', alt: 'Bocetos' },
+        { src: '/Victoria/Catrina.png', alt: 'Catrina' },
+        { src: '/images/Bocetos/Uno.jpg', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Dos.jpg', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Tres.jpg', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Cuatro.jpg', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Cinco.jpg', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Seis.jpg', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Siete.jpg', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Ocho.jpg', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Nueve.jpg', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Diez.jpg', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Once.jpg', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Doce.png', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Trece.png', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Catorce.png', alt: 'Bocetos' },
+        { src: '/images/Bocetos/Quince.jpg', alt: 'Bocetos' },
+        { src: '/images/Bocetos/BoostUno.jpg', alt: 'Boost' },
+        { src: '/images/Bocetos/Boost2.jpg', alt: 'Boost' },
+        { src: '/images/Bocetos/Boost3.jpg', alt: 'Boost' },
+        { src: '/images/Bocetos/Boost4.jpg', alt: 'Boost' },
+        { src: '/images/Bocetos/Boost5.jpg', alt: 'Boost' },
+        { src: '/images/Bocetos/Boost6.jpg', alt: 'Boost' }
     ]
 
     const FotosContent = [
-        { src: '/Bocetos/Aviv.png', alt: 'Bocetos' }
+        { src: '/images/Fotos/Uno.jpg', alt: 'Fotos' },
+        { src: '/images/Fotos/Dos.jpg', alt: 'Fotos' },
+        { src: '/images/Fotos/Tres.jpg', alt: 'Fotos' },
+        { src: '/images/Fotos/Cuatro.jpg', alt: 'Fotos' },
+        { src: '/images/Fotos/Cinco.jpg', alt: 'Fotos' },
+        { src: '/images/Fotos/Seis.jpg', alt: 'Fotos' },
+        { src: '/images/Fotos/Siete.png', alt: 'Fotos' },
+        { src: '/images/Fotos/Ocho.png', alt: 'Fotos' },
+        { src: '/images/Fotos/Nueve.png', alt: 'Fotos' },
+        { src: '/images/Fotos/Diez.jpg', alt: 'Fotos' },
+        { src: '/images/Fotos/Once.jpg', alt: 'Fotos' },
+        { src: '/images/Fotos/Doce.jpg', alt: 'Fotos' },
+        { src: '/images/Fotos/Trece.jpg', alt: 'Fotos' },
+        { src: '/images/Fotos/Catorce.jpg', alt: 'Fotos' },
+        { src: '/images/Fotos/MonstruoArie.png', alt: 'Fotos' },
+        { src: '/images/Fotos/Xibalba.jpg', alt: 'Fotos' },
+        { src: '/images/Fotos/Sky1.jpg', alt: 'Sky' },
+        { src: '/images/Fotos/Sky2.jpg', alt: 'Sky' },
+        { src: '/images/Fotos/Sky4.jpg', alt: 'Sky' },
+        { src: '/images/Fotos/Sky5.jpg', alt: 'Sky' },
+        { src: '/images/Fotos/Sky6.png', alt: 'Sky' },
+        { src: '/images/Fotos/Boost1.jpg', alt: 'Boost' }
     ]
 
     return (
-        <div className="content" id="diseño">
-            <h3>Diseño</h3>
+        <div className="content diseño-container" id="diseño">
+            <h3>Bocetos</h3>
             <Carousel content={CarouselContent} height={isDesktop ? 800 : 400} large />
             <h3>Fotos</h3>
-            <Carousel content={CarouselContent} height={isDesktop ? 800 : 400} large />
+            <Carousel content={FotosContent} height={isDesktop ? 800 : 400} large />
         </div>
     )
 }

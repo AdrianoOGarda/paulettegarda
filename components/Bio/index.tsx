@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'react-bootstrap/Image'
+import Embed from '../Embed'
 import './styles.css'
 
 interface BioProps {
@@ -9,17 +9,24 @@ const Bio: React.FC<BioProps> = () => {
     return (
         <div id="bio" className="bio-container content">
             <div className="bio-title-container">
-                <div className="round-image">
+                <div className="square-image">
                     <img src="/Bio/Poli.jpg" />
                 </div>
                 <h3>Biografía</h3>
             </div>
-            <p>Nací en 1965 en la Ciudad de México, hija de padre italiano y madre guatemalteca, en una familia de artistas. Desde pequeña, sentí una gran inquietud por la moda. A los 19 años, mi mejor amiga me contó que había estudiado diseño de modas en Italia, algo que desconocía. En ese momento, yo estudiaba contabilidad en el TEC de Monterrey, siguiendo el consejo de mi padre. Al enterarme de la existencia de la carrera de diseño de modas, me llené de emoción y, con el apoyo incondicional de mi madre, decidí cambiar de rumbo y estudiar diseño de modas en la Universidad Janette Klein. Mi padre, preocupado por mi futuro, dejó de hablarme durante dos años.</p>
-            <p>Durante mis estudios en Janette Klein, Fredy Garza, un amigo de la adolescencia, llegó un día a mi casa y me pidió ayuda con un proyecto. Para mi sorpresa, me encontré en un set de producción de comerciales, un mundo lleno de glamour, moda y oportunidades que no conocía. Fue una experiencia que me permitió expresar mi talento y pasión por la moda, desde mis bocetos en papel hasta las prendas terminadas en los sets de producción.</p>
-            <p>Agradezco a la vida por darme la oportunidad de realizarme como diseñadora de modas, un sueño que tuve desde mi niñez. Mi carrera me ha llevado a ser vestuarista de comerciales, videos y desfiles de moda. Quiero agradecer a todas las personas que se toman el tiempo de leer esta pequeña biografía. Desde 1988, he estado involucrada en proyectos relacionados con la moda y el vestuario.</p>
-            <p>A lo largo de 28 años, he trabajado en videoclips, desfiles y comerciales. Estoy a sus órdenes para cualquier proyecto futuro.</p>
-            <p><strong>Idiomas:</strong> Inglés, Hebreo y Español.</p>
+            <p>
+                Nací en la Ciudad de México, hija de padre italiano, artista, pintor y chef, y madre guatemalteca joyera.
+                Estudié contabilidad en el Tecnológico de Monterrey. Faltándome dos semestres para graduarme, me enteré que llegaba a México una universidad de diseño de modas. Fascinada, me salí del TEC y estudié en Janette Klein.
+            </p>
+            <p>Mi carrera como diseñadora empezó haciendo mis propios diseños con telas innovadoras importadas, tales como charol y terciopelo elástico, entre otras. Vendí mis diseños por varios años en el maravilloso mercado que se pone los domingos en la Lagunilla. Era una época donde este tianguis era muy artístico, lleno de antigüedades y cosas que no encontrabas en otro lado, incluyendo mi puesto.</p>
+            <p>Entré al mundo de la publicidad por un gran amigo mío de la adolescencia y escuela que empezaba a dirigir. Cuando menos cuenta me di, ya estaba yo en un set como diseñadora de imagen y vestuario.</p>
+            <p>A lo largo de mi carrera he diseñado ropa para celebridades, he hecho vestuarios para festivales de danza y de techno como Burning Man. He trabajado en comerciales para TV con muchas casas productoras como freelance, en pequeñas y grandes empresas, con variedad de directores, algunos con mucho talento y carrera. He hecho cortometrajes, desfiles de moda y sesiones de moda para foto fija.</p>
+            <p>Cuento con un taller de costura grande y bodega de vestuario. Siempre agradecida y al día con nuevas tendencias, abierta a conocer gente nueva del medio de publicidad que, en algunos casos, se vuelven grandes amigos en esta gran familia.</p>
+            <p>Paulette Garda</p>
             <p><strong><a href="mailto:paulettegarda@gmail.com" className="mail-link">paulettegarda@gmail.com</a></strong></p>
+            <div className="embed-container">
+                <Embed videoId="YSUBuQd6kSs?si=RxeUxR958zYkM0ZT" autoPlay />
+            </div>
         </div>
     )
 }

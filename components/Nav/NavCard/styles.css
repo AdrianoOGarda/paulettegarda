@@ -23,6 +23,10 @@
 
 .nav-card-diseño {
     background-image: url('../../../src/images/Bocetos/Diseño.png');
+}
+
+.nav-card-cine {
+    background-image: url('../../../src/images/Nav/Refugio.jpg');
 } 
 
 .nav-card::before {

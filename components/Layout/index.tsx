@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHandPointUp } from '@fortawesome/free-regular-svg-icons'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import './styles.css'
 
 interface LayoutProps {
@@ -40,7 +40,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </footer>
             {showScroll && (
                 <FontAwesomeIcon
-                    icon={faHandPointUp}
+                    icon={faChevronUp}
                     className="scroll-top"
                     onClick={scrollTop}
                 />
