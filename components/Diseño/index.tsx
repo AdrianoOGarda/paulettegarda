@@ -16,6 +16,7 @@ const Diseño: React.FC<DiseñoProps> = () => {
 
     const CarouselContent = [
         { src: '/Bocetos/Aviv.png', alt: 'Bocetos' },
+        { src: '/Bocetos/Hada.jpg', alt: 'Hada' },
         { src: '/Bocetos/Biografia.png', alt: 'Bocetos' },
         { src: '/Bocetos/BlueHeroes.png', alt: 'Bocetos' },
         { src: '/Bocetos/Catrina.png', alt: 'Bocetos' },
