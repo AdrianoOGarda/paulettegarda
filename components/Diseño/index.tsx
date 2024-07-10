@@ -92,13 +92,13 @@ const Diseño: React.FC<DiseñoProps> = () => {
         { src: '/images/Fotos/Sky5.jpg', alt: 'Sky' },
         { src: '/images/Fotos/Sky6.png', alt: 'Sky' },
         { src: '/images/Fotos/Boost1.jpg', alt: 'Boost' },
-        { src: '/images/Fotos/Coche.jpg', alt: 'Coche' },
-        { src: '/images/Fotos/Hadas.jpg', alt: 'Hadas' },
-        { src: '/images/Fotos/Jugadores.jpg', alt: 'Jugadores' },
-        { src: '/images/Fotos/Niños1.jpg', alt: 'Niños' },
-        { src: '/images/Fotos/Niños2.jpg', alt: 'Niños' },
-        { src: '/images/Fotos/Western.jpg', alt: 'Western' },
-        { src: '/images/Fotos/Western2.jpg', alt: 'Western' }
+        { src: '/images/Nuevas/Coche.jpg', alt: 'Coche' },
+        { src: '/images/Nuevas/Hadas.jpg', alt: 'Hadas' },
+        { src: '/images/Nuevas/Jugadores.jpg', alt: 'Jugadores' },
+        { src: '/images/Nuevas/Ninos1.jpg', alt: 'Ninos' },
+        { src: '/images/Nuevas/Ninos2.jpg', alt: 'Ninos' },
+        { src: '/images/Nuevas/Western.png', alt: 'Western' },
+        { src: '/images/Nuevas/Western2.png', alt: 'Western' }
     ]
 
     return (
