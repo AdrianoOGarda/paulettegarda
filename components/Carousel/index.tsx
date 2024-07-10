@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import Modal from 'react-bootstrap/Modal'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import './styles.css'
 
 interface CarouselItem {
@@ -56,7 +58,10 @@ const CarouselComponent: React.FC<CarouselProps> = ({ content, height, large }) 
             </div>
 
             <Modal show={showModal} onHide={handleClose} size="lg" centered>
-                <Modal.Body>
+                <Modal.Body className="position-relative">
+                    <button type="button" className="close-button" onClick={handleClose}>
+                        <FontAwesomeIcon icon={faTimes} />
+                    </button>
                     {selectedImage && (
                         <img
                             src={selectedImage.src}

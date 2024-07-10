@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    color: #171717
+    color: #171717;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .navbar-toggler {

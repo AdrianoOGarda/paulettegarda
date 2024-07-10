@@ -23,7 +23,6 @@ const Comerciales: React.FC<ComercialesProps> = () => {
     ]
 
     const emperadorImages = [
-        { src: '/Emperador/Emperador1.jpg', alt: 'Emperador' },
         { src: '/Emperador/Emperador2.jpg', alt: 'Emperador' },
         { src: '/Emperador/Emperador3.jpg', alt: 'Emperador' },
         { src: '/Emperador/Emperador4.jpg', alt: 'Emperador' },
@@ -56,7 +55,7 @@ const Comerciales: React.FC<ComercialesProps> = () => {
                     <Comercial title="Whitehaven" videoId="tkzYzNx8LBc?si=Kr8mz8yBV9Hux1W" />
                     <Comercial 
                         title="Emperador Vacacionista" 
-                        description="Hice una guardia mujer en fibra de vidrio cromado. Es muy difícil de cromar. Hice réplicas de los trajes de los guardias, también en fibra de vidrio cromadas, para que no pesaran y que los guardias no se ahogaran en el mar y en la cordillera de los Andes. Esto permitió que los perros pudieran jalar los trineos con los guardias que llevaban pieles encima."
+                        description="Se hicieron réplicas de los trajes de los guardias, pero en fibra de vidrio y se pudieron cromar con un tratamiento especial para joyería. Esto con la finalidad de que no pesaran, ya que los perros de los trineos, que también tenían sus trajes de guardias, debían jalar los trineos con los guardias y las pieles que llevaban encima. A los guardias en el mar, las armaduras les servían de salvavidas (con hule espuma esculpida). También diseñé la única guardia mujer “Emperador”."
                         videoId="CkOvyK421fY?si=vHHEn9JopuX31USB" 
                         carouselContent={emperadorImages} 
                         height={isMobile ? 400 : 600}

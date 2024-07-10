@@ -33,7 +33,6 @@
 .third-comerciales-block::before {
     background-image: url('../../src/images/Bocetos/Heroes.png');
     background-position: right top;
-    right: -350px;
 }
 
 .fourth-comerciales-block::before {
@@ -55,9 +54,10 @@
 
 .see-more {
     font-family: 'Reddit Sans';
+    font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .comerciales-container-more {
@@ -66,4 +66,10 @@
     justify-content: center;
     gap: 50px;
     padding: 50px 0 50px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .third-comerciales-block::before {
+        right: -350px;
+    }
 }
