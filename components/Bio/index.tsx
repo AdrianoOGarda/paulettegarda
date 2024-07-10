@@ -25,7 +25,7 @@ const Bio: React.FC<BioProps> = () => {
             <p>Paulette Garda</p>
             <p><strong><a href="mailto:paulettegarda@gmail.com" className="mail-link">paulettegarda@gmail.com</a></strong></p>
             <div className="embed-container">
-                <Embed videoId="YSUBuQd6kSs?si=RxeUxR958zYkM0ZT" autoPlay />
+                <Embed videoId="bini7ZAwx1U?si=AhkWLT0ZC7iDcxhe" autoPlay />
             </div>
         </div>
     )

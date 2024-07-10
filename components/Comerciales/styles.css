@@ -32,7 +32,8 @@
 
 .third-comerciales-block::before {
     background-image: url('../../src/images/Bocetos/Heroes.png');
-    top: -200px;
+    background-position: right top;
+    right: -350px;
 }
 
 .fourth-comerciales-block::before {

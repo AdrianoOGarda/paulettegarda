@@ -13,6 +13,8 @@ const Cine: React.FC<CineProps> = () => {
             <Comercial title="El Refugio" videoId="d2HeeC9IeJ4?si=XDcI4lrkZgRhrdNz" darkMode />
             <Comercial title="Déjala Ir" videoId="ot_gr7VhzCs?si=jSz_ofbW8fxelhXt" darkMode />
             <Comercial title="La Llorona Memento Mori" videoId="VaxLsvFzqpg?si=U6baUyzn16XoEils" darkMode />
+            <Comercial title="Dzulum" videoId="Tz5ey_CzLXo?si=X3wP6WDpGXs1761l" darkMode />
+            
         </div>
     )
 }

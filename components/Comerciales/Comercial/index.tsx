@@ -7,7 +7,6 @@ interface CarouselItem {
     src: string
     alt: string
     label?: string
-    description?: string, 
 }
 
 interface ComercialProps {
@@ -16,15 +15,21 @@ interface ComercialProps {
     height?: number,
     darkMode?: boolean,
     altEmbed?: boolean,
+    description?: string, 
     carouselContent?: CarouselItem[]
 }
 
-const Comercial: React.FC<ComercialProps> = ({ title, videoId, carouselContent, height, darkMode, altEmbed }) => {
+const Comercial: React.FC<ComercialProps> = ({ title, videoId, carouselContent, height, darkMode, altEmbed, description }) => {
     return (
         <div className="comercial-card">
             <h4 className={darkMode && 'dark-h4'}>{title}</h4>
             {carouselContent && carouselContent.length > 0 && (
                 <Carousel content={carouselContent} height={height} />
+            )}
+            {description && (
+                <div className="description">
+                    <p>{description}</p>
+                </div>
             )}
             {videoId && <Embed videoId={videoId} altEmbed={altEmbed} />}
         </div>

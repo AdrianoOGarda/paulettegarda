@@ -13,3 +13,14 @@
 .dark-h4 {
     color: white;
 }
+
+.description {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .description {
+        text-align: center;
+        padding: 0 100px 0 100px;
+    }
+}

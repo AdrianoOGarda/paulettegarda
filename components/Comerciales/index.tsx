@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Comercial from './Comercial/index'
+import useWindowSize from '../../hooks/useWindowSize'
 import './styles.css'
 
 interface ComercialesProps {
@@ -7,6 +8,12 @@ interface ComercialesProps {
 
 const Comerciales: React.FC<ComercialesProps> = () => {
     const [more, setMore] = useState(false)
+    const windowSize = useWindowSize()
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        setIsMobile(windowSize.width < 768)
+    }, [windowSize])
 
     const bibmoImages = [
         { src: '/Bimbo/Espalda.jpg', alt: 'Bimbo espalda' },
@@ -15,14 +22,16 @@ const Comerciales: React.FC<ComercialesProps> = () => {
         { src: '/Bimbo/NaranjaSecond.jpg', alt: 'Bimbo Secundario' }
     ]
 
-    const victoriaImages = [
-        { src: '/Victoria/Catrina.png', alt: 'Victoria catrina' },
-        { src: '/Victoria/VictoriaDos.jpg', alt: 'Victoria' },
-        { src: '/Victoria/VictoriaTres.jpg', alt: 'Victoria' },
-        { src: '/Victoria/VictoriaUno.jpg', alt: 'Victoria' }
-    ]
-
-    const sexyImages = [
+    const emperadorImages = [
+        { src: '/Emperador/Emperador1.jpg', alt: 'Emperador' },
+        { src: '/Emperador/Emperador2.jpg', alt: 'Emperador' },
+        { src: '/Emperador/Emperador3.jpg', alt: 'Emperador' },
+        { src: '/Emperador/Emperador4.jpg', alt: 'Emperador' },
+        { src: '/Emperador/Emperador5.jpg', alt: 'Emperador' },
+        { src: '/Emperador/Emperador6.jpg', alt: 'Emperador' },
+        { src: '/Emperador/Emperador7.jpg', alt: 'Emperador' },
+        { src: '/Emperador/Emperador8.jpg', alt: 'Emperador' },
+        { src: '/Emperador/Emperador9.jpg', alt: 'Emperador' },
         { src: '/Sexy/SexyDos.jpeg', alt: 'Emperador' },
         { src: '/Sexy/SexyCinco.jpg', alt: 'Emperador' },
         { src: '/Sexy/SexyCuatro.jpg', alt: 'Emperador' },
@@ -46,10 +55,11 @@ const Comerciales: React.FC<ComercialesProps> = () => {
                     <Comercial title="Pepsi Uthercast" videoId="vAoN0YQT6mU?si=Jix73il6eHpuQ7Se" />
                     <Comercial title="Whitehaven" videoId="tkzYzNx8LBc?si=Kr8mz8yBV9Hux1W" />
                     <Comercial 
-                        title="Emperador Sexy" 
-                        videoId="0_GDadboTck?si=cniHSJlBOVaN9EcB" 
-                        carouselContent={sexyImages} 
-                        height={600}
+                        title="Emperador Vacacionista" 
+                        description="Hice una guardia mujer en fibra de vidrio cromado. Es muy difícil de cromar. Hice réplicas de los trajes de los guardias, también en fibra de vidrio cromadas, para que no pesaran y que los guardias no se ahogaran en el mar y en la cordillera de los Andes. Esto permitió que los perros pudieran jalar los trineos con los guardias que llevaban pieles encima."
+                        videoId="CkOvyK421fY?si=vHHEn9JopuX31USB" 
+                        carouselContent={emperadorImages} 
+                        height={isMobile ? 400 : 600}
                     />
                 </div>
             </div>
@@ -65,6 +75,7 @@ const Comerciales: React.FC<ComercialesProps> = () => {
                     <Comercial title="Naturella Happy Skin" videoId="Mw2lwn_XINg?si=OTiAH425I13TEXAW" altEmbed />
                     <Comercial title="Lucas Intenso" videoId="E98-HKMQuzU?si=M6adnvIR5TkCFSmw" altEmbed />
                     <Comercial title="Victoria 150 Años" videoId="9M41KaAkxVQ?si=mqW-atQNDRkD_AHd" altEmbed />
+                    <Comercial title="Emperador Sexy" videoId="0_GDadboTck?si=cniHSJlBOVaN9EcB" altEmbed />
                     <Comercial title="McDonald's Tasty" videoId="5ArjuykxjZw?si=uXifzUdiBASsQoyL" altEmbed />
                     <Comercial title="Gamesa clásicas" videoId="f9r1-djMRVk?si=F6SzFtmZ3-rRfU7e" altEmbed />
                     <Comercial title="Tempra Boost" videoId="ewItDZonK_k" altEmbed />
